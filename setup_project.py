@@ -272,11 +272,16 @@ def step_copy_missing_files(project_dir: Path):
     minimum to extended: the extended spec files do not exist in the project
     yet and must be copied from the template before placeholder replacement.
     Only copies files that are absent — never overwrites existing content.
+
+    Special case: README.md in the destination comes from _README_template.md
+    in the template (the template's own README.md is the repo-level README and
+    is excluded from the copy).
     """
     for relative in FILES_WITH_PLACEHOLDER:
         dest = project_dir / relative
         if not dest.exists():
-            src = TEMPLATE_DIR / relative
+            # README.md in the destination is sourced from _README_template.md.
+            src = TEMPLATE_DIR / ("_README_template.md" if relative == "README.md" else relative)
             if src.exists():
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(src, dest)
