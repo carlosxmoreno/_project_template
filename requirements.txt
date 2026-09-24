@@ -1,0 +1,8 @@
+# {{PROJECT_NAME}} dependencies
+# Add dependencies as they are decided and approved in specs
+
+# Configuration
+pyyaml
+
+# Linter (dev only — optional)
+# ruff

@@ -1,0 +1,18 @@
+# {{PROJECT_NAME}} — General settings
+# All runtime configuration goes here. No hardcoded values in code.
+
+project:
+  name: "{{PROJECT_NAME}}"
+  version: "0.1.0"
+  log_level: "INFO"   # INFO | DEBUG | ERROR
+
+paths:
+  data_dir: "data"
+  logs_dir: "logs"
+
+# Add component-specific configuration below as the project grows
+# Example:
+# llm:
+#   provider: gemini
+#   model: gemini-2.0-flash
+#   temperature: 0.1

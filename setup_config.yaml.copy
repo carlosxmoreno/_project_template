@@ -1,0 +1,110 @@
+# Project setup configuration
+# Edit this file before running: python setup_project.py <ProjectName>
+# All options here control what setup_project.py does when creating a new project.
+# Re-running the script on an existing project only updates FILES_WITH_PLACEHOLDER
+# (specs, config, pyproject.toml, README, utilities) — never source code or .venv.
+
+# ---------------------------------------------------------------------------
+# Destination
+# ---------------------------------------------------------------------------
+
+# Parent directory where the new project folder will be created.
+# The project will be created at: destination_parent/<ProjectName>
+# Use forward slashes or double backslashes on Windows.
+destination_parent: "D:/Dev/GenAI/AI_agent/agents"
+
+# ---------------------------------------------------------------------------
+# Specs profile
+# ---------------------------------------------------------------------------
+
+# Controls which spec files are included in the project.
+#
+# minimum  : includes only the core specs needed to start any project:
+#              00-working-notes, 01-vision, 02-architecture, 03-dev-practices
+#
+# extended : includes all specs, adding domain-specific templates:
+#              04-data-model, 05-pipelines, 06-ux-spec, 07-api-spec,
+#              08-test-log, 09-environment
+#
+# Start with minimum and switch to extended if the project grows to need them.
+# Switching from extended to minimum on an existing project will DELETE the
+# extended spec files — make sure they are empty or backed up first.
+specs_profile: "minimum"           # minimum | extended
+
+# ---------------------------------------------------------------------------
+# Linter
+# ---------------------------------------------------------------------------
+
+# Whether to include ruff linter configuration in pyproject.toml.
+#
+# true  : keeps the [tool.ruff] and [tool.ruff.lint] sections in pyproject.toml.
+#         Install ruff with: pip install ruff
+#         Run with: ruff check . or configure your IDE to use it automatically.
+#
+# false : removes all ruff sections from pyproject.toml during setup.
+#         Use this if you prefer a different linter (flake8, pylint) or none.
+linter: true                        # true | false
+
+# ---------------------------------------------------------------------------
+# Python environment
+# ---------------------------------------------------------------------------
+
+# Which type of Python environment to create for the project.
+#
+# venv  : creates a .venv directory inside the project using the Python
+#         interpreter that runs this script. Isolated per project.
+#         Activate on Windows : .venv\Scripts\activate
+#         Activate on Linux   : source .venv/bin/activate
+#
+# conda : creates a named conda environment using the project name.
+#         Requires conda to be installed and available on PATH.
+#         Activate with: conda activate <ProjectName>
+#         python_version is used here to set the environment's Python version.
+#
+# none  : skips environment creation. Use this when you manage environments
+#         externally (pyenv, global conda, uv, devcontainer, etc.) or want
+#         to create the environment manually after setup.
+python_env: "venv"                  # venv | conda | none
+
+# Python version to use. Applies to conda environments only.
+# For venv, the version is determined by the interpreter running this script.
+# Check your current version with: python --version
+python_version: "3.11"             # e.g. "3.11" | "3.12" | "3.13"
+
+# ---------------------------------------------------------------------------
+# venv disk space optimization
+# ---------------------------------------------------------------------------
+
+# Whether the venv can see packages installed in the system Python.
+#
+# false (default) : fully isolated venv. Only packages installed via
+#                   pip install -r requirements.txt are available.
+#                   Safest option — no risk of version conflicts with system packages.
+#
+# true  : the venv is created with --system-site-packages. Packages already
+#         installed in the base Python (pyyaml, requests, pydantic, etc.) are
+#         visible without reinstalling them. Saves significant disk space when
+#         many projects share the same dependencies.
+#         Trade-off: less isolation. If the system has a different version of a
+#         package than what requirements.txt pins, the system version takes
+#         precedence unless you explicitly install the pinned version in the venv.
+#         Recommended when: disk space matters and projects share a known base set
+#         of packages. Not recommended for production deployments.
+venv_system_packages: false         # false | true
+
+# ---------------------------------------------------------------------------
+# Git
+# ---------------------------------------------------------------------------
+
+# Whether to initialize a git repository with an initial commit after setup.
+#
+# true  : runs git init, stages all files, and commits with the message
+#         "feat: initial project structure from template".
+#         The .gitignore in the template already excludes .venv, __pycache__,
+#         .env, logs/ and other files that should not be tracked.
+#         After setup, connect to a remote with:
+#           git remote add origin <repo_url>
+#           git push -u origin main
+#
+# false : skips git initialization. Initialize manually when ready.
+git_init: true                      # true | false
