@@ -20,6 +20,7 @@
 -
 
 ## Technical constraints
+<!-- Section with focus on Technical Stack -->
 
 - Language: Python
 - <!-- Add constraints: free/opensource only, lightweight, local LLM, etc. -->
@@ -39,32 +40,6 @@
 <!-- - `core_`    → Interfaces (ABCs) -->
 <!-- - `adapter_` → Concrete implementations -->
 <!-- - `orch_`    → Orchestrator -->
-
-## Project structure
-
-```
-{{PROJECT_NAME}}/
-├── specs/                  → Specification documents
-├── config/                 → YAML configuration files
-├── data/                   → Input/output data
-├── logs/                   → Runtime logs
-├── references/             → External reference documents
-├── src/                    → Source code
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── sandbox/            → Throwaway scripts
-├── utilities/
-│   ├── logger.py
-│   ├── timestamp.py
-│   └── api_errors.py
-├── .amazonq/rules/dev-rules.md
-├── .env.example
-├── .gitignore
-├── pyproject.toml
-├── README.md
-└── requirements.txt
-```
 
 ## Utilities
 

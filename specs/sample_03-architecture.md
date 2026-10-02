@@ -70,39 +70,6 @@ CLI (main.py)
 - `adapter_` → concrete implementations of external services
 - No prefix  → orchestration and CLI scripts
 
-## Project structure
-
-```
-InvoiceParser/
-├── specs/
-├── config/
-│   ├── settings.yaml
-│   └── llm.yaml
-├── data/
-│   ├── input/             → PDF invoices to process
-│   └── output/            → generated CSV files
-├── logs/
-├── references/            → sample invoices for testing
-├── src/
-│   ├── pdf_extractor.py
-│   ├── llm_parser.py
-│   ├── csv_exporter.py
-│   └── config.py
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── sandbox/
-├── utilities/
-│   ├── logger.py
-│   ├── timestamp.py
-│   └── api_errors.py
-├── main.py
-├── .env.example
-├── .gitignore
-├── pyproject.toml
-└── requirements.txt
-```
-
 ## Utilities
 
 Three shared modules provided by the project template:

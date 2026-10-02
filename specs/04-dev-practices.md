@@ -104,7 +104,7 @@ Component: <core|adapter|orch|cli|config|...>
 - Log execution time for any operation expected to take > 1 s.
 - Do not load entire datasets into memory if streaming or pagination is feasible.
 - Avoid redundant LLM calls: cache or reuse results within a session where correct to do so.
-- Define a response time target per operation in 01-vision.md before optimising.
+- Define a response time target per operation in 02-requirements.md before optimising.
 - Profile before optimising: measure first, then act.
 
 ## Error handling

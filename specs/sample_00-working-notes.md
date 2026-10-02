@@ -12,55 +12,20 @@
 
 ---
 
-## How to use this framework
+## Agent Memory (Current State)
 
-This project uses a spec-driven, incremental development framework.
-Specs are written before code. Code is written to satisfy specs. Tests verify compliance.
+<!-- Agents: Read this section first when starting a new session. This is your "memory.md". -->
+**Last Updated**: 2025-01-16 18:00
+**Development Time Tracked**: 4 hours
+**Current Phase**: Implementing Core Components
 
-### Spec profiles
+**Where we left off**: 
+- We finished defining the architecture and selected pdfplumber.
+- FR-01 to FR-05 are approved.
 
-**Minimum** — included in every project. Sufficient for most projects.
-
-```
-specs/
-├── 00-working-notes.md   ← THIS DOCUMENT (work diary, decisions, session history)
-├── 01-vision.md          → Problem, solution, users, scope, OKRs, design principles
-├── 02-requirements.md    → Functional requirements (FR), non-functional requirements (NFR),
-│                            quality attribute targets (ISO/IEC 25010)
-├── 03-architecture.md    → Components, structure, dependencies, design decisions
-└── 04-dev-practices.md   → Testing strategy, code style, commits, branching, security
-```
-
-**Extended** — add individual files as the project needs them.
-
-```
-specs/
-├── 05-data-model.md      → Entities, schemas, storage design
-├── 06-pipelines.md       → Data flows and processing pipelines
-├── 07-ux-spec.md         → User interaction (CLI, web, API)
-├── 08-api-spec.md        → LLM and external API contracts
-├── 09-test-log.md        → Formal test log (when volume justifies it)
-└── 10-environment.md     → Environment setup, deployment, compatibility
-```
-
-### Traceability chain
-
-```
-01-vision § Capabilities
-    └── 02-requirements § FR / NFR / Quality attributes
-            └── 03-architecture § Components
-                    └── src/ (implementation)
-                            └── tests/ (verification)
-```
-
-### Development process
-
-**Phases per increment:**
-1. **SPEC** — Write or update the relevant spec
-2. **REVIEW** — Validate together, resolve ambiguities
-3. **IMPL** — Code according to the approved spec
-4. **VERIFY** — Run tests, confirm compliance with spec
-
+**Next Immediate Steps**:
+- Begin implementation of `pdf_extractor` component.
+- Write unit tests for `pdf_extractor`.
 ---
 
 ## Pending decisions
