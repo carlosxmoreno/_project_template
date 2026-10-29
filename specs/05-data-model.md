@@ -1,4 +1,4 @@
-# 04 - Data Model — {{PROJECT_NAME}}
+# 05 - Data Model — {{PROJECT_NAME}}
 
 ## Entities
 
@@ -17,7 +17,7 @@
 
 ## Data flow
 
-<!-- How does data move between storage systems? Reference 05-pipelines.md if applicable -->
+<!-- How does data move between storage systems? Reference 06-pipelines.md if applicable -->
 
 ## Design decisions
 

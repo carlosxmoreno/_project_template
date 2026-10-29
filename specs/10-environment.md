@@ -1,4 +1,4 @@
-# 09 - Environment — {{PROJECT_NAME}}
+# 10 - Environment — {{PROJECT_NAME}}
 
 ## Development environment
 

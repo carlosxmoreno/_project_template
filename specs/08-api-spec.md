@@ -1,4 +1,4 @@
-# 07 - API / LLM Spec — {{PROJECT_NAME}}
+# 08 - API / LLM Spec — {{PROJECT_NAME}}
 
 ## Overview
 

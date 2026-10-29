@@ -1,4 +1,4 @@
-# 05 - Pipelines — {{PROJECT_NAME}}
+# 06 - Pipelines — {{PROJECT_NAME}}
 
 ## Pipeline: <!-- Name, e.g. Ingestion Pipeline -->
 

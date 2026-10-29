@@ -585,7 +585,7 @@ def main():
     print("=" * 50)
     print(f"  Project '{project_name}' is ready.")
     print(f"  {project_dir}")
-    print("  Next: fill in specs/01-vision.md to start.")
+    print("  Next: agree the vision, scope and requirements with the agent before planning or implementation.")
     print("=" * 50)
 
 

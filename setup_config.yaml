@@ -20,11 +20,12 @@ destination_parent: "D:/Dev/GenAI/AI_agent/agents"
 # Controls which spec files are included in the project.
 #
 # minimum  : includes only the core specs needed to start any project:
-#              00-working-notes, 01-vision, 02-architecture, 03-dev-practices
+#              00-working-notes, 01-vision, 02-requirements, 03-architecture,
+#              04-dev-practices
 #
 # extended : includes all specs, adding domain-specific templates:
-#              04-data-model, 05-pipelines, 06-ux-spec, 07-api-spec,
-#              08-test-log, 09-environment
+#              05-data-model, 06-pipelines, 07-ux-spec, 08-api-spec,
+#              09-test-log, 10-environment
 #
 # Start with minimum and switch to extended if the project grows to need them.
 # Switching from extended to minimum on an existing project will DELETE the
@@ -107,4 +108,4 @@ venv_system_packages: false         # false | true
 #           git push -u origin main
 #
 # false : skips git initialization. Initialize manually when ready.
-git_init: true                      # true | false
+git_init: false                   # true | false

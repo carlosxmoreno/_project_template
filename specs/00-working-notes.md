@@ -11,17 +11,18 @@
 ## Agent Memory (Current State)
 
 <!-- Agents: Read this section first when starting a new session. This is your "memory.md". -->
-**Last Updated**: 2026-10-28 16:43 Europe/Madrid
-**Development Time Tracked**: 0.05 hours
-**Current Phase**: <!-- e.g., Drafting Specs, Implementing Feature X, Bug Fixing -->
+**Last Updated**: 2026-10-29 10:52 Europe/Madrid
+**Development Time Tracked**: 0.25 hours
+**Current Phase**: Improving the project template framework
 
 **Where we left off**: 
 <!-- Briefly describe the exact state of the project at the end of the last session -->
-- 
+- Added the agreed Specify → Plan → Tasks → Implement → Converge workflow to the agent and user guidance.
+- Corrected spec numbering and internal references.
 
 **Next Immediate Steps**:
 <!-- What needs to be done right now -->
-- 
+- Review the updated template workflow and decide whether any further refinements are needed.
 ---
 
 ## Pending decisions
@@ -43,7 +44,6 @@
 ### Session 1
 - Project created from template
 
-### Session 2 — 2026-10-28
-- Renamed `agent.md` to `AGENTS.md` so Codex automatically discovers the repository instructions.
-- Verified that the rename preserves the file contents and that no references to the old filename require updating.
-- GitHub API access is currently blocked; PR creation remains pending.
+### Session 2 — 2026-10-29
+- Added the agreed project workflow to `AGENTS.md` and `README.md`.
+- Updated setup guidance and corrected extended-spec numbering and references.

@@ -46,11 +46,24 @@ The script will:
 - Create a Python virtual environment.
 - Optionally initialize a git repository.
 
-**4. Start with the specs**
+**4. Define the project with the agent**
 
-Open `specs/01-vision.md` and fill in the problem, solution and scope.
-Then `specs/02-requirements.md` for functional and non-functional requirements.
-See `specs/00-working-notes.md` for the full framework guide.
+Use the following incremental flow. The agent must not plan or write code until
+you have explicitly approved the affected specifications.
+
+1. **Specify**: agree on the vision, scope and requirements in
+   `specs/01-vision.md` and `specs/02-requirements.md`; complete applicable
+   extended specs as needed.
+2. **Plan**: define architecture, technical decisions and verification in
+   `specs/03-architecture.md` and relevant extended specs.
+3. **Tasks**: split the approved work into small, traceable increments and
+   record the next step in `specs/00-working-notes.md`.
+4. **Implement**: build only approved increments and their required tests.
+5. **Converge**: run checks, update documentation and record progress,
+   decisions and next steps in `specs/00-working-notes.md`.
+
+`AGENTS.md` is the agent's operational guide. `specs/00-working-notes.md`
+preserves the project context between sessions.
 
 ## Spec framework
 

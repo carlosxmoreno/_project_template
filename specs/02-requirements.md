@@ -86,10 +86,10 @@
 <!-- How easy is it to analyse, modify, test and reuse the code? -->
 - Target: <!-- e.g. Each component has unit tests; cyclomatic complexity < 10 per function -->
 - Not applicable:
-- See also: dev-rules.md, 04-dev-practices.md
+- See also: 04-dev-practices.md
 
 ### Portability
 <!-- How easily can the system be moved to a different environment? -->
 - Target: <!-- e.g. Runs on Windows and Linux without code changes -->
 - Not applicable:
-- See also: dev-rules.md (pathlib, UTF-8)
+- See also: 04-dev-practices.md (pathlib, UTF-8)

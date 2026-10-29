@@ -1,4 +1,4 @@
-# 06 - UX Spec — {{PROJECT_NAME}}
+# 07 - UX Spec — {{PROJECT_NAME}}
 
 ## Interface type
 
