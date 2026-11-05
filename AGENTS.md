@@ -8,7 +8,7 @@ Welcome! You are an AI agent working on this project. This repository follows a 
    - `01-vision.md` (Vision and Goals)
    - `02-requirements.md` (Functional & Non-Functional Requirements)
    - `03-architecture.md` (Architecture and Components)
-3. **Follow the Rules**: Read `specs/04-dev-practices.md` for coding style, testing, and branching strategies.
+3. **Follow the Rules**: Read `specs/04-dev-practices.md` for design principles, coding style, testing, and branching strategies.
 
 ## Project Workflow
 

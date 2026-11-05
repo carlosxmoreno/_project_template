@@ -75,7 +75,7 @@ preserves the project context between sessions.
 | `specs/01-vision.md` | Problem, solution, users, scope, OKRs |
 | `specs/02-requirements.md` | Functional requirements, NFR, quality attributes (ISO 25010) |
 | `specs/03-architecture.md` | Components, structure, design decisions |
-| `specs/04-dev-practices.md` | Testing, code style, security, commits |
+| `specs/04-dev-practices.md` | Design principles, testing, code style, security, commits |
 
 ### Extended set — activate as needed
 
@@ -102,7 +102,7 @@ from PDF invoices using an LLM and exports to CSV).
 | `specs/sample_01-vision.md` | Example vision with stakeholders, OKRs and design principles |
 | `specs/sample_02-requirements.md` | Example FR/NFR table and quality attribute targets |
 | `specs/sample_03-architecture.md` | Example component diagram and design decisions |
-| `specs/sample_04-dev-practices.md` | Example testing strategy and security rules |
+| `specs/sample_04-dev-practices.md` | Example design principles, testing strategy and security rules |
 | `specs/sample_05-data-model.md` | Example Invoice entity and CSV schema |
 | `specs/sample_06-pipelines.md` | Example extraction pipeline with error handling |
 | `specs/sample_07-ux-spec.md` | Example CLI flows and error messages |

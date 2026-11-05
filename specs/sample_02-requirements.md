@@ -63,9 +63,9 @@
 ### Maintainability
 <!-- How easy is it to analyse, modify, test and reuse the code? -->
 - Target: Each component (pdf_extractor, llm_parser, csv_exporter) has independent unit tests. No function exceeds 40 lines.
-- See also: dev-rules.md, 04-dev-practices.md
+- See also: 04-dev-practices.md § Design principles, § Testing
 
 ### Portability
 <!-- How easily can the system be moved to a different environment? -->
 - Target: Runs on Windows and Linux without code changes (NFR-01).
-- See also: dev-rules.md (pathlib, UTF-8)
+- See also: 04-dev-practices.md § General rules (pathlib, UTF-8)
