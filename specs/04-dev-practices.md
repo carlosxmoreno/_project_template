@@ -88,6 +88,11 @@ Component: <core|adapter|orch|cli|config|...>
 
 ## Testing
 
+<!-- Verification strategy for the project. Quality attribute targets (performance,
+     reliability, etc.) are defined in 02-requirements.md § Quality attributes and
+     traced from OKRs in 01-vision.md. This section defines how those targets are
+     verified through tests. -->
+
 ### Framework
 - pytest
 

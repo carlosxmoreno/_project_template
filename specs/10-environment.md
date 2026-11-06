@@ -7,6 +7,10 @@
 - **Virtual environment**: <!-- venv | conda -->
 - **Key dependencies**: see requirements.txt
 
+## Compatibility notes
+
+<!-- Known issues or requirements per OS or environment -->
+
 ## Setup instructions
 
 ```bash
@@ -30,7 +34,3 @@ Copy `.env.example` to `.env` and fill in the values.
 ## Deployment
 
 <!-- How is this project run in production or shared with others? -->
-
-## Compatibility notes
-
-<!-- Known issues or requirements per OS or environment -->

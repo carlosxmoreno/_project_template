@@ -4,6 +4,10 @@
 
 <!-- What external APIs or LLMs does this project use? -->
 
+## Providers implemented
+
+<!-- List providers and their status: implemented / pending -->
+
 ## LLM configuration
 
 <!-- If using an LLM, describe: provider, model, parameters, config file location -->
@@ -28,7 +32,3 @@ max_output_tokens: 8192
 ## Error handling
 
 <!-- Retryable errors, fatal errors, timeouts. Reference utilities/api_errors.py -->
-
-## Providers implemented
-
-<!-- List providers and their status: implemented / pending -->

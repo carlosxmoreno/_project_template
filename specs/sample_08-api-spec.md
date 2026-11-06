@@ -9,6 +9,13 @@
 InvoiceParser uses one external API: a generative LLM for structured field extraction.
 No other external APIs are used in v1.
 
+## Providers implemented
+
+| Provider | Status      | Notes                              |
+|----------|-------------|------------------------------------|
+| Gemini   | Implemented | Default. gemini-2.0-flash.         |
+| OpenAI   | Pending     | Config structure ready, not tested.|
+
 ## LLM configuration
 
 **Config file**: `config/llm.yaml`
@@ -69,10 +76,3 @@ If a field cannot be found, return an empty string for text fields and 0.0 for n
 | Validation | Fatal       | Raise LLMParsingError after max_retries exhausted.     |
 
 See `utilities/api_errors.py` for `is_retryable()` and `error_message()` helpers.
-
-## Providers implemented
-
-| Provider | Status      | Notes                              |
-|----------|-------------|------------------------------------|
-| Gemini   | Implemented | Default. gemini-2.0-flash.         |
-| OpenAI   | Pending     | Config structure ready, not tested.|

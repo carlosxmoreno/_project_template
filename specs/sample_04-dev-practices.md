@@ -78,6 +78,10 @@ Component: <pdf_extractor|llm_parser|csv_exporter|cli|config>
 
 ## Testing
 
+<!-- Quality attribute targets (95% extraction accuracy, zero silent failures) are
+     defined in 02-requirements.md § Quality attributes and traced from OKRs in
+     01-vision.md. This section defines how those targets are verified through tests. -->
+
 ### Framework
 - pytest
 

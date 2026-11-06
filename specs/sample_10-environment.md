@@ -11,6 +11,13 @@
 - **Virtual environment**: venv (.venv)
 - **Key dependencies**: see requirements.txt
 
+## Compatibility notes
+
+- **Windows**: use `.venv\Scripts\activate`. Path separators handled via pathlib throughout.
+- **Linux/macOS**: use `source .venv/bin/activate`. No known issues.
+- **Scanned PDFs**: not supported in v1. pdfplumber requires a text layer. OCR support planned for v2.
+- **Python 3.10 or earlier**: not tested. pydantic-ai requires Python 3.11+.
+
 ## Setup instructions
 
 ```bash
@@ -48,10 +55,3 @@ InvoiceParser is a local CLI tool — no server deployment in v1.
 Distribution options for sharing with the finance team:
 - Share the repository and have each user run setup instructions above.
 - Package as a standalone executable with PyInstaller (future consideration).
-
-## Compatibility notes
-
-- **Windows**: use `.venv\Scripts\activate`. Path separators handled via pathlib throughout.
-- **Linux/macOS**: use `source .venv/bin/activate`. No known issues.
-- **Scanned PDFs**: not supported in v1. pdfplumber requires a text layer. OCR support planned for v2.
-- **Python 3.10 or earlier**: not tested. pydantic-ai requires Python 3.11+.

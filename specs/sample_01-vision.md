@@ -27,6 +27,13 @@ to a CSV file ready for import into accounting tools.
 - **Developer / maintainer**: sets up the tool, manages API keys, updates the LLM
   prompt when extraction quality degrades.
 
+## Product principles
+
+- Configurable: LLM provider, model and prompt configurable via YAML, no code changes needed.
+- Fault tolerant: one failed invoice does not stop the batch.
+- Auditable: every extraction logged with input file, output fields and timestamp.
+- Lightweight: no database, no server, runs locally.
+
 ## Scope v1
 
 ### Capabilities
@@ -52,20 +59,6 @@ to a CSV file ready for import into accounting tools.
 - KR1: A finance analyst can process a batch following the README in under 10 minutes.
 - KR2: Error messages are human-readable and suggest a corrective action.
 
-## Future scope
-
-- Line item extraction (v2).
-- OCR support for scanned invoices via Tesseract (v2).
-- JSON export format (v2).
-- Confidence score per extracted field (v2).
-
-## Design principles
-
-- Configurable: LLM provider, model and prompt configurable via YAML, no code changes needed.
-- Fault tolerant: one failed invoice does not stop the batch.
-- Auditable: every extraction logged with input file, output fields and timestamp.
-- Lightweight: no database, no server, runs locally.
-
 ## Requirements and quality
 
 See [02-requirements.md](02-requirements.md) for functional requirements,
@@ -74,3 +67,10 @@ non-functional requirements and quality attribute targets (ISO/IEC 25010).
 ## Technical constraints
 
 See [03-architecture.md](03-architecture.md) for technical decisions and stack.
+
+## Future scope
+
+- Line item extraction (v2).
+- OCR support for scanned invoices via Tesseract (v2).
+- JSON export format (v2).
+- Confidence score per extracted field (v2).

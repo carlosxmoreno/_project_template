@@ -4,6 +4,13 @@
      It illustrates how to fill in this template for a real project.
      Do not copy this file — use 03-architecture.md as your starting point. -->
 
+## Technical constraints
+
+- Language: Python 3.11+
+- No database — all I/O via filesystem.
+- No GUI — CLI only in v1.
+- Free/open-source dependencies only (except LLM API, which is pay-per-use).
+
 ## Component diagram
 
 ```
@@ -49,13 +56,6 @@ CLI (main.py)
 - **Responsibility**: parse CLI arguments, orchestrate the pipeline, report results.
 - **Input**: --input (file or directory), --output (CSV path).
 - **Output**: CSV file + console summary (N processed, N errors).
-
-## Technical constraints
-
-- Language: Python 3.11+
-- No database — all I/O via filesystem.
-- No GUI — CLI only in v1.
-- Free/open-source dependencies only (except LLM API, which is pay-per-use).
 
 ## Design decisions
 

@@ -24,6 +24,14 @@
      - Finance manager: needs reliable export data for accounting system. -->
 -
 
+## Product principles
+
+<!-- High-level values that guide product and design decisions: what the product
+     should feel like and what it should prioritise. Use business language.
+     e.g. Configurable, Lightweight, Fault tolerant, Auditable, Privacy by default.
+     Technical design principles (SRP, DRY, YAGNI...) go in 04-dev-practices.md. -->
+-
+
 ## Scope v1
 
 ### Capabilities
@@ -50,17 +58,6 @@
 - KR1:
 - KR2:
 
-## Future scope
-
-<!-- Capabilities, users and anything planned beyond v1. Keep it brief. -->
--
-
-## Design principles
-
-<!-- High-level principles that guide all technical and product decisions.
-     e.g. Incremental, Configurable, Lightweight, Extensible, Privacy by default -->
--
-
 ## Requirements and quality
 
 See [02-requirements.md](02-requirements.md) for functional requirements,
@@ -69,3 +66,8 @@ non-functional requirements and quality attribute targets (ISO/IEC 25010).
 ## Technical constraints
 
 See [03-architecture.md](03-architecture.md) for technical decisions and stack.
+
+## Future scope
+
+<!-- Capabilities, users and anything planned beyond v1. Keep it brief. -->
+-

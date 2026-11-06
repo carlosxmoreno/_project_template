@@ -6,6 +6,13 @@
      decision here so it can be reviewed and challenged.
      Requirements that drive architectural decisions are in 02-requirements.md. -->
 
+## Technical constraints
+
+<!-- Section with focus on Technical Stack -->
+
+- Language: Python
+- <!-- Add constraints: free/opensource only, lightweight, local LLM, etc. -->
+
 ## Component diagram
 
 ```
@@ -18,12 +25,6 @@
 
 ### 1. <!-- Component name -->
 -
-
-## Technical constraints
-<!-- Section with focus on Technical Stack -->
-
-- Language: Python
-- <!-- Add constraints: free/opensource only, lightweight, local LLM, etc. -->
 
 ## Design decisions
 
